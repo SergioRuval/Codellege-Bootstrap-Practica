@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Facebook</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e702d0b558.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      
+    <div class="container mt-5 pt-3">
+        <div class="row ">
+            <div class="col-7">
+                <h1 class="font-weight-bold text-primary">facebook</h1>
+                <h2 class="font-weight-normal">Inicios de sesión recientes</h2>
+                <h6 class="text-muted font-weight-normal">Haz clic en tu foto o añade una cuenta</h6>
+                <div class="card-columns mt-4 py-3">
+                    <div class="card rounded-lg text-center">
+                        <img class="w-100 mb-1" src="/Img/Perfil.jpg" alt="No hay imagen de perfil">
+                        <div class="card-body pt-2 pb-3">
+                            <a class="card-link h5 font-weight-normal text-dark">Sergio</a>
+                        </div>
+                    </div>
+                    <div class="card rounded-lg text-center">
+                        <button class="btn btn-white w-100 border border-0 py-4 mt-5 mb-2" data-toggle="modal" data-target="#iniciarSesion"><i class="fas fa-plus-circle display-4 text-primary my-1"></i></button>
+                        <div class="card-body pt-4 mt-3">
+                            <a class="card-link h5 font-weight-normal text-primary" data-toggle="modal" data-target="#iniciarSesion">Añadir cuenta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 mt-4">
+                <div class="col-11 card border-top-0 rounded-lg mt-5 shadow-lg">
+                    <div class="card-body px-2">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <input type="email" id="user" class="form-control py-4" placeholder="Correo electrónico o número de teléfono">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <input type="password" id="password" class="form-control py-4" placeholder="Contraseña">
+                                </div>
+                            </div>
+                        </form>
+                        <a href="/Practica-Boostrap_2.html" class="btn btn-primary col-12 font-weight-bolder p-2">Entrar</a>
+                        <div class="text-center mt-3">
+                            <a href="">¿Has olvidado los datos de la cuenta?</a>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center bg-white">
+                        <button class="btn btn-success px-3 py-2 btn-lg my-3" data-toggle="modal" data-target="#crearCuenta">Crear cuenta nueva</button>
+                    </div>
+                </div>
+                <div class="col-11 p-2 mt-3 text-center">
+                    <p><a class="text-dark font-weight-bold" href="">Crea una página</a> para un personaje público, un grupo de música o un negocio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal's -->
+
+    <div class="modal fade" data-backdrop="static" id="iniciarSesion"  tabindex="-1" aria-labelledby="modal iniciar sesión" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="mb-4 mt-0 pt-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="font-weight-normal">Iniciar sesión en Facebook</h5>
+                    </div>
+                    <form class="col-12 px-2">
+                        <div class="row">
+                            <div class="col col-12">
+                                <input type="email" class="form-control" placeholder="Correo electrónico o número de telefono" style="font-size: 75%;">
+                            </div>
+                            <div class="col col-12 mt-3">
+                                <input type="password" class="form-control" placeholder="Contraseña" style="font-size: 75%;">
+                            </div>
+                            <div class="col col-12 my-2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input mt-2" id="recordarPass">
+                                    <label for="recordarPass" class="form-check-label" style="font-size: 75%;">Recordar contraseña</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row px-0 mt-1">
+                            <div class="col-12">
+                                <button class="btn btn-primary btn-block" style="font-size: 75%;">Entrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-12 text-center p-0 m-0">
+                        <a class="text-dark" style="font-size: 75%;">¿Has olvidado la contraseña?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-backdrop="static" id="crearCuenta" tabindex="-1" aria-labelledby="modal crear cuenta" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registrarte</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="col-12 p-0">
+                        <div class="row m-0">
+                            <div class="col pr-0">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apellidos">
+                            </div>
+                        </div>
+                        <div class="row mx-0 my-3">
+                            <div class="col col-12">
+                                <input type="email" class="form-control" placeholder="Número de móvil o correo electrónico">
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col col-12">
+                                <input type="password" class="form-control" placeholder="Contraseña nueva">
+                            </div>
+                        </div>
+                        <div class="row mx-0 my-3">
+                            <div class="col col-12">
+                                <label style="font-size: 90%;">Fecha de nacimiento <i class="fas fa-question-circle"></i></label>
+                            </div>
+                            <div class="col pr-0">
+                                <select class="form-control">
+                                    <option selected>Día</option>
+                                    <option >1</option>
+                                    <option >2</option>
+                                    <option >3</option>
+                                    <option >4</option>
+                                    <option >5</option>
+                                    <option >6</option>
+                                    <option >7</option>
+                                    <option >8</option>
+                                    <option >9</option>
+                                    <option >10</option>
+                                    <option >11</option>
+                                    <option >12</option>
+                                    <option >13</option>
+                                    <option >14</option>
+                                    <option >15</option>
+                                    <option >16</option>
+                                    <option >17</option>
+                                    <option >18</option>
+                                    <option >19</option>
+                                    <option >20</option>
+                                    <option >21</option>
+                                    <option >22</option>
+                                    <option >23</option>
+                                    <option >24</option>
+                                    <option >25</option>
+                                    <option >26</option>
+                                    <option >27</option>
+                                    <option >28</option>
+                                    <option >29</option>
+                                    <option >30</option>
+                                    <option >31</option>
+                                </select>
+                            </div>
+                            <div class="col pr-0">
+                                <select class="form-control">
+                                    <option selected>Mes</option>
+                                    <option>Ene</option>
+                                    <option>Feb</option>
+                                    <option>Mar</option>
+                                    <option>Abr</option>
+                                    <option>May</option>
+                                    <option>Jun</option>
+                                    <option>Jul</option>
+                                    <option>Ago</option>
+                                    <option>Sep</option>
+                                    <option>Oct</option>
+                                    <option>Nov</option>
+                                    <option>Dic</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-control">
+                                    <option selected>Año</option>
+                                    <option>2020</option>
+                                    <option>2019</option>
+                                    <option>2018</option>
+                                    <option>2017</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                    <option>2012</option>
+                                    <option>2011</option>
+                                    <option>2010</option>
+                                    <option>2009</option>
+                                    <option>2008</option>
+                                    <option>2007</option>
+                                    <option>2006</option>
+                                    <option>2005</option>
+                                    <option>2004</option>
+                                    <option>2003</option>
+                                    <option>2002</option>
+                                    <option>2001</option>
+                                    <option>2000</option>
+                                    <option>1999</option>
+                                    <option>1998</option>
+                                    <option>1997</option>
+                                    <option>1996</option>
+                                    <option>1995</option>
+                                    <option>1994</option>
+                                    <option>1993</option>
+                                    <option>1992</option>
+                                    <option>1991</option>
+                                    <option>1990</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mx-0 my-3">
+                            <div class="col col-12">
+                                <label style="font-size: 90%;">Sexo <i class="fas fa-question-circle"></i></label>
+                            </div>
+                            <div class="col pr-0 col-3">
+                                <div class="form-check border rounded-lg">
+                                    <label for="mujer" class="mr-2 my-2 form-check-label">Mujer</label>
+                                    <input name="radioSexo" id="mujer" type="radio" class="mx-0 my-3 form-check-input">
+                                </div>
+                            </div>
+                            <div class="col pr-0 col-4">
+                                <div class="form-check border rounded-lg">
+                                    <label for="hombre" class="mr-2 my-2 form-check-label">Hombre</label>
+                                    <input name="radioSexo" id="hombre" type="radio" class="mx-0 my-3 form-check-input">
+                                </div>
+                            </div>
+                            <div class="col col-5">
+                                <div class="form-check border rounded-lg">
+                                    <label for="pers" class="ml-0 mr-1 my-2 form-check-label">Personalizado</label>
+                                    <input name="radioSexo" id="pers" type="radio" class="mx-0 my-3 form-check-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-0 my-3">
+                            <div class="col">
+                                <p class="text-muted text-justify" style="font-size: 75%;">Al hacer click en Registrarte, aceptas las <a href="">Condiciones</a>, la <a href="">Política de datos</a> y la <a href="">Política de cookies</a>. Es posible que te enviemos notificaciones por SMS que podrás desactivar cuando quieras</p>
+                            </div>
+                        </div>
+                        <div class="row mx-0 my-3">
+                            <div class="col text-center">
+                                <button class="btn btn-lg btn-success font-weight-bold">Registrarte</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
